@@ -1,0 +1,75 @@
+.add-travel-request-page {
+    width: 100%;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffecb3;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.travel-request-form h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+.travel-request-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+}
+
+.travel-request-form input,
+.travel-request-form select,
+.travel-request-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.travel-request-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.travel-request-form button {
+    padding: 10px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 48%; 
+}
+
+.travel-request-form button[type="submit"] {
+    background-color: #FFE34C;
+}
+
+.travel-request-form button[type="submit"]:hover {
+    background-color: #ffd700;
+}
+
+.travel-request-form button[type="button"] {
+    background-color: #dc3545;
+}
+
+.travel-request-form button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+.travel-request-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

@@ -1,0 +1,77 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto 0 auto; 
+  padding: 20px;
+  background-color: #ffecb3; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.user-form input,
+.user-form select {
+  margin-bottom: 12px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff; 
+  width: 100%;
+}
+
+
+.user-form .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.user-form .submit-button,
+.user-form .cancel-button {
+  padding: 12px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 48%; 
+}
+
+.user-form .submit-button {
+  background-color: #FFC107;
+}
+
+.user-form .cancel-button {
+  background-color: #f44336; 
+}
+
+.user-form .submit-button:hover {
+  background-color: #ffb300; 
+  transform: scale(1.02);
+}
+
+.user-form .cancel-button:hover {
+  background-color: #e53935; 
+  transform: scale(1.02);
+}
+
+
+.user-form .message {
+  margin-top: 20px;
+  color: #d32f2f; 
+  text-align: center;
+}

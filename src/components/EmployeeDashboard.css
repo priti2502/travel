@@ -1,0 +1,131 @@
+.employee {
+    height: 100%;
+    width: 100vw;
+    margin-top: 90px;
+}
+
+.employee h1 {
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.title-emp {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 1.8rem;
+}
+
+.employee-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.create-request-button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.create-request-button:hover {
+    background-color: #ffecb3;
+    transform: translateY(-2px);
+}
+
+.travel-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.travel-history-table th,
+.travel-history-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.travel-history-table th {
+    background-color: #ffecb3;
+    font-weight: bold;
+}
+
+.travel-history-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.travel-history-table tr {
+    transition: transform 0.3s ease, background-color 0.2s ease;
+}
+
+.travel-history-table tr:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px); /* Row moves further up */
+}
+
+.edit, .downloadBtn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit {
+    background-color: red;
+}
+
+.downloadBtn {
+    background-color: #FFD700;
+}
+
+.edit:hover, .downloadBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); /* Buttons also move up slightly on hover */
+}
+
+.edit:active, .downloadBtn:active {
+    transform: translateY(0); /* Reset position on click */
+}
+
+.edit:focus, .downloadBtn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Focus effect for buttons */
+}
+
+@media (max-width: 768px) {
+    .travel-request-form-container {
+        padding: 15px;
+    }
+
+    .travel-request-form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .create-request-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

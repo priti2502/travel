@@ -1,0 +1,97 @@
+body{
+  font-size: 1.8rem;
+  background: url('/public/assets/img7.jpg') no-repeat center center fixed;
+}
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 60px;
+}
+.title{
+   background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 1.8rem;
+}
+
+.admin-dashboard h1{
+  color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 20px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 1.8rem;
+}
+
+
+.dashboard-options {
+  margin-bottom: 20px;
+}
+
+
+.toggle-form-button, .submit-button {
+  background-color: #FFE34C; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-form-button:hover, .submit-button:hover {
+  background-color: #0056b3; 
+}
+
+.close-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
+.add-button {
+  margin-bottom: 10px;
+  padding: 1rem;
+  background-color: #FFE34C;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-button:hover {
+  background-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.add-button:active {
+  transform: translateY(0);
+}
+
+.add-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 227, 76, 0.7);
+}
+
+.users{
+  color: black;
+  font-size: 20px;
+}

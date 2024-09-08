@@ -1,0 +1,125 @@
+.traveladmin-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 60px;
+  
+}
+.title-tr{
+  background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 50px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+    font-size: 1.8rem;
+}
+.traveladmin-dashboard h1 {
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  margin: 20px;
+  margin-bottom: 30px;
+  
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+th {
+  background-color: #ffecb3;
+  color: black;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}button {
+ 
+
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  color: black;
+  
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 14px;
+ 
+ 
+ 
+}
+
+.book-button {
+  background-color: #28a745;
+  box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  
+}
+
+.book-button:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 8px rgba(40, 167, 69, 0.3);
+  transform: translateY(-2px);
+}
+
+.return-manager-button {
+  background-color: #ffc107;
+  box-shadow: 0 4px 6px rgba(255, 193, 7, 0.2);
+  border-radius: 5px;
+}
+
+.return-manager-button:hover {
+  background-color: #e0a800;
+  box-shadow: 0 6px 8px rgba(255, 193, 7, 0.3);
+  transform: translateY(-2px);
+}
+
+.return-employee-button {
+  background-color: #17a2b8;
+  box-shadow: 0 4px 6px rgba(23, 162, 184, 0.2);
+  border-radius: 5px;
+}
+
+.return-employee-button:hover {
+  background-color: #138496;
+  box-shadow: 0 6px 8px rgba(23, 162, 184, 0.3);
+  transform: translateY(-2px);
+}
+
+.close-button {
+  color: black;
+  background-color: #dc3545;
+  box-shadow: 0 4px 6px rgba(220, 53, 69, 0.2);
+}
+
+.close-button:hover {
+  background-color: #c82333;
+  box-shadow: 0 6px 8px rgba(220, 53, 69, 0.3);
+  transform: translateY(-2px);
+}
