@@ -144,7 +144,7 @@ const AddTravelRequestPage = () => {
                 
                 <label>
                     Project:
-                    <select name="projectId" value={formData.projectId} onChange={handleChange} required>
+                    <select value={formData.projectId} onChange={handleChange} required>
                         <option value="">Select a project</option>
                         {projects.map(project => (
                             <option key={project.projectId} value={project.projectId}>
@@ -153,10 +153,6 @@ const AddTravelRequestPage = () => {
                         ))}
                     </select>
                 </label>
-
-               
-
-              
                 <label>
                     Reason for Travel:
                     <input name="reasonForTravel" value={formData.reasonForTravel} onChange={handleChange} required />
@@ -179,7 +175,7 @@ const AddTravelRequestPage = () => {
                 </label>
 
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <button type="submit" >{isEditMode ? 'Update Request' : 'Submit Request'}</button>
+                    <button name='update' type="submit" >{isEditMode ? 'Update Request' : 'Submit Request'}</button>
                     <button type="button" onClick={() => navigate('/dashboard/employee')}>Cancel</button>
                 </div>
             </form>

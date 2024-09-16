@@ -26,8 +26,8 @@ const UserTable = ({ users, deleteUser, editUser }) => (
           <td>{user.manager ? `${user.manager.firstName} ${user.manager.lastName}` : 'N/A'}</td>
           <td>{user.role?.roleName || 'N/A'}</td>
           <td>
-            <button className="edit-button" onClick={() => editUser(user)}>Edit</button>
-            <button className="delete-button" onClick={() => deleteUser(user.userId)}>Delete</button>
+            <button name='Edit' className="edit-button" onClick={() => editUser(user)}>Edit</button>
+            <button name='Delete' className="delete-button" onClick={() => deleteUser(user.userId)}>Delete</button>
           </td>
         </tr>
       ))}

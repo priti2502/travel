@@ -27,7 +27,7 @@ function AdminDashboard() {
         axios.get('https://localhost:7075/api/Department'),
         axios.get('https://localhost:7075/api/User/managers')
       ]);
-      setUsers(usersResponse.data.reverse()); // Reverse to display newest first
+      setUsers(usersResponse.data.reverse()); 
       setRoles(rolesResponse.data);
       setDepartments(departmentsResponse.data);
       setManagers(managersResponse.data);
@@ -49,9 +49,9 @@ function AdminDashboard() {
 
     try {
       await axios.post('https://localhost:7075/api/User/users', newUser);
-      await fetchData(); // Fetch updated data
+      await fetchData(); 
 
-      // Reset form and states
+      
       setNewUser({ email: '', roleId: '', firstName: '', lastName: '', departmentId: '', managerId: '', address: '', mobileNum: '', password: '' });
       setShowAddForm(false);
       setEditMode(false);
@@ -84,7 +84,7 @@ function AdminDashboard() {
     try {
       console.log('Request payload:', payload);
       await axios.put(`https://localhost:7075/api/User/users/${newUser.userId}`, payload);
-      await fetchData(); // Fetch updated data
+      await fetchData(); 
 
       setNewUser({ email: '', roleId: '', firstName: '', lastName: '', departmentId: '', managerId: '', address: '', mobileNum: '', password: '' });
       setShowAddForm(false);
@@ -102,7 +102,7 @@ function AdminDashboard() {
 
     try {
       await axios.delete(`https://localhost:7075/api/User/users/${userId}`);
-      await fetchData(); // Fetch updated data
+      await fetchData(); 
       setMessage('User deleted successfully.');
     } catch (error) {
       console.error('Error deleting user:', error);
@@ -136,7 +136,7 @@ function AdminDashboard() {
      <h1><span className='title'>Admin Dashboard</span></h1>
       {!showAddForm && (
         <div className="controls" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <button className="add-button" onClick={handleAdd}>Add User</button>
+          <button name='addUser' className="add-button" onClick={handleAdd}>Add User</button>
           <input
             type="text"
             className="search-bar"
