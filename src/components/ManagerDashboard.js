@@ -103,8 +103,8 @@ const ManagerRequests = () => {
                 <td>
                   {(request.status === 'Pending' || request.status === 'Returned to Manager' || request.status === 'Updated') ? (
                     <>
-                      <button className="approve-button" onClick={() => handleApprove(request.travelRequestId)}>Approve</button>
-                      <button className="reject-button" onClick={() => handleReject(request.travelRequestId)}>Reject</button>
+                      <button name='approve' className="approve-button" onClick={() => handleApprove(request.travelRequestId)}>Approve</button>
+                      <button name='reject' className="reject-button" onClick={() => handleReject(request.travelRequestId)}>Reject</button>
                     </>
                   ) : (
                     <span>No actions available</span>

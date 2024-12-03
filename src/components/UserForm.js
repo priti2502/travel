@@ -13,6 +13,7 @@ const UserForm = ({ user, handleInputChange, buttonText, onSubmit, onClose, role
   >
     <input
       type="email"
+      name='Email'
       value={user.email || ''}
       onChange={(e) => handleInputChange(e, 'email')}
       placeholder="Email"
@@ -20,6 +21,7 @@ const UserForm = ({ user, handleInputChange, buttonText, onSubmit, onClose, role
     />
     <input
       type="text"
+      name='FirstName'
       value={user.firstName || ''}
       onChange={(e) => handleInputChange(e, 'firstName')}
       placeholder="First Name"
@@ -27,24 +29,28 @@ const UserForm = ({ user, handleInputChange, buttonText, onSubmit, onClose, role
     />
     <input
       type="text"
+      name='LastName'
       value={user.lastName || ''}
       onChange={(e) => handleInputChange(e, 'lastName')}
       placeholder="Last Name"
     />
     <input
       type="text"
+      name='Address'
       value={user.address || ''}
       onChange={(e) => handleInputChange(e, 'address')}
       placeholder="Address"
     />
     <input
       type="password"
+      name='Password'
       value={user.password || ''}
       onChange={(e) => handleInputChange(e, 'password')}
       placeholder="Password"
     />
     <input
       type="tel"
+      name='MobileNum'
       value={user.mobileNum || ''}
       onChange={(e) => handleInputChange(e, 'mobileNum')}
       placeholder="Mobile Number"
@@ -52,6 +58,7 @@ const UserForm = ({ user, handleInputChange, buttonText, onSubmit, onClose, role
     />
     <select
       value={user.departmentId || ''}
+      name='Department'
       onChange={(e) => handleInputChange(e, 'departmentId')}
     >
       <option value="">Select Department</option>
@@ -63,6 +70,7 @@ const UserForm = ({ user, handleInputChange, buttonText, onSubmit, onClose, role
     </select>
     <select
       value={user.roleId || ''}
+      name='RoleId'
       onChange={(e) => handleInputChange(e, 'roleId')}
     >
       <option value="">Select Role</option>
@@ -75,6 +83,7 @@ const UserForm = ({ user, handleInputChange, buttonText, onSubmit, onClose, role
     {user.roleId !== 'Manager' && (
       <select
         value={user.managerId || ''}
+        name='ManagerId'
         onChange={(e) => handleInputChange(e, 'managerId')}
       >
         <option value="">Select Manager</option>
@@ -86,7 +95,7 @@ const UserForm = ({ user, handleInputChange, buttonText, onSubmit, onClose, role
       </select>
     )}
     <div>
-    <button type="submit" className="submit-button">{buttonText}</button>
+    <button name='update' type="submit" className="submit-button">{buttonText}</button>
       <button type="button" className="cancel-button" onClick={onClose}>
         Cancel
       </button>

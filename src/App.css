@@ -61,16 +61,6 @@ body {
 .landing-content p {
   font-size: 1.5rem;
 }
-.carousel-container {
-  position: relative;
-  width: 800%; /* Adjust width as needed */
-  max-width: 800px; /* Maximum width for larger screens */
-  height: 500px; /* Adjust height as needed */
-  overflow: hidden;
-  border-radius: 15px; /* Circular corners */
-}
-
-
 
 .home-container:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
@@ -181,6 +171,19 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1000; /* Ensure it stays above other content */
   transition: background-color 0.3s, box-shadow 0.3s;
+  /* background: url('/public/assets/logo1.svg') no-repeat left center; */
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img, 
+.navbar-logo svg {
+  width: 50px;
+  height: 50px;
+  /* Adjust size as needed */
 }
 
 .navbar-title {

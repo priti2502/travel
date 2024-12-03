@@ -54,6 +54,7 @@ const EmployeeDashboard = () => {
       </h1>
       <button
         className="create-request-button"
+        name="createBtn"
         onClick={() => navigate("/new-travel-request")}
       >
         Create New Travel Request
